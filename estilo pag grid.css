@@ -1,0 +1,162 @@
+
+*{
+	font-family: 'Goldman', cursive;
+
+}
+
+body{
+	
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.header,.main, .aside,.footer{
+	padding: 20px;
+}
+
+.header{
+	background: lightblue;
+	flex-basis: 60px;
+}
+.main{
+	background: slateblue;
+	flex-basis: 300px;
+	flex-grow: 2;
+	flex-shrink: 0;
+}
+.aside{
+	background: darkslateblue; 
+	flex-basis: 200px;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+.footer{
+	background: violet;
+}
+
+
+
+
+@media screen and (min-width: 900px){
+	.content{
+	display: grid;	
+	grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;
+	grid-template-columns: repeat(3, 1fr);
+	 }
+	.header{
+	grid-column: 1/ span 3; 
+	}
+	.main, .aside{
+		
+	}
+	.main{
+		grid-column: 1 /span 2;
+		grid-row: 2/span 4;
+	}
+	.aside{
+		grid-row: 2/span 4;
+	}
+	.footer{
+		grid-column: 1/ span 3; 
+		grid-row: 6/ 7;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pie{
+	background: #777;
+	width: 97.5%;
+	position: absolute;
+	padding: 20px;
+	align-content: center;
+	bottom: 0;
+	text-align: center;
+}
+
+.motivacion{
+	font-size: 1.5em;
+	position: sticky;
+	top: 0;
+	right: 0;
+	margin: 0 0 auto auto;
+	border: 5px solid black;
+	background: #f005;
+	width: 100%;
+	height: auto;
+}
+
+.motivacion:hover{
+	background: #3af5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.comt{
+	background: blue;
+	margin: auto;
+	margin-top: 40px;
+	width: 400px;
+	height: 100px;
+}
+
+.cont img{
+	outline: 10px solid #6f3;
+}*/
+
+

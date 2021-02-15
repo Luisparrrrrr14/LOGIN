@@ -1,0 +1,187 @@
+
+*{
+	font-family: 'Goldman', cursive;
+}
+
+body{
+	height: 100vh;
+	background: #ccc;
+}
+.container{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3,minmax(30px,1fr));
+	grid-template-rows: 24px repeat(7,118px);
+
+}
+
+.caja:hover{
+	animation: none;
+	}
+
+.caja{
+	grid-row: 2/span 1;
+	grid-column: 2/span 1 ; 
+	background: #922;
+	display: flex;
+	border-radius: 50%;
+	color: #fff;
+	/*Animacion de rotar*/
+	animation-name: rotarcaja1;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	z-index: 50;
+}
+
+.caja2{
+	transform: translateY(-20px);
+	border-radius: 50%;
+	display: flex;
+	background: slateblue;
+	grid-row: 2/span 1;
+	grid-column: 2/span 1 ;
+		/*Animacion de rotar*/
+	animation-name: rotarcaja2;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	z-index: 100;
+
+}
+.caja3{
+	transform: translateY(20px);
+	border-radius: 50%;
+	display: flex;
+	background: #497;
+	grid-row: 2/span 1;
+	grid-column: 2/span 1 ;	
+		/*Animacion de rotar*/
+	animation-name: rotarcaja3;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes rotarcaja1{
+	from{
+		transform: rotateY(0deg) rotateX(45deg);
+
+	}
+	to{
+		transform: rotateY(360deg) rotateX(45deg);
+	}
+}
+
+@keyframes rotarcaja2{
+	from{
+		transform: rotateY(0deg) rotateX(45deg) translateZ(20px);;
+
+	}
+	to{
+
+		transform: rotateY(360deg) rotateX(45deg) translateZ(20px);;
+	
+	}
+}
+
+@keyframes rotarcaja3{
+	from{
+		transform: rotateY(0deg) rotateX(45deg) translateZ(-20px);
+
+	}
+	to{
+		transform: rotateY(360deg) rotateX(45deg) translateZ(-20px);
+	}
+}
+
+
+
+
+b{
+	margin: auto;
+}
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pie{
+	background: #777;
+	width: 97.5%;
+	position: absolute;
+	padding: 20px;
+	align-content: center;
+	bottom: 0;
+	text-align: center;
+}
+
+.motivacion{
+	font-size: 1.5em;
+	position: sticky;
+	top: 0;
+	right: 0;
+	margin: 0 0 auto auto;
+	border: 5px solid black;
+	background: #f005;
+	width: 100%;
+	height: auto;
+}
+
+.motivacion:hover{
+	background: #3af5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.comt{
+	background: blue;
+	margin: auto;
+	margin-top: 40px;
+	width: 400px;
+	height: 100px;
+}
+
+.cont img{
+	outline: 10px solid #6f3;
+}*/
+
+
